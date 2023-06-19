@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Suhu</h1>
+
+        <form id="temperature-form">
+            <div class="form-group">
+                <label for="temperature">Masukkan suhu :</label>
+                <input type="text" id="temperature" name="temperature" placeholder="Masukkan suhu di sini" required>
+            </div>
+
+            <div class="form-group">
+                <label for="unit">Satuan :</label>
+                <select id="unit" name="unit">
+                    <option value="celsius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+
+            <button type="button" id="convert-button">Konversi</button>
+            <button type="button" id="reset-button">Reset</button>
+        </form>
+
+        <div id="result"></div>
+        <div id="explanation"></div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
